@@ -1,0 +1,45 @@
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+public class exemp {
+
+    public static void main(String[] args) throws AWTException {
+        Robot robo = new Robot();
+        //aguardar o usuário trocar de tela.
+        robo.delay(3000);
+
+        //for (int i = 0; i <= 9; i++) {
+            //apertar na primeira coluna da planilha
+            robo.mouseMove(139, 234);
+            //aguardar
+            robo.delay(500);
+
+            robo.keyPress(KeyEvent.VK_CONTROL);
+            robo.keyRelease(KeyEvent.VK_C);
+            robo.keyPress(KeyEvent.VK_C);
+            robo.keyRelease(KeyEvent.VK_CONTROL);
+
+            //robo.mousePress(KeyEvent.BUTTON3_DOWN_MASK);
+            //robo.mouseRelease(KeyEvent.BUTTON3_DOWN_MASK);
+
+            //robo.delay(500);
+
+            //robo.mouseMove(700, 770);
+
+            //robo.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
+            //robo.mouseRelease(KeyEvent.BUTTON1_DOWN_MASK);
+
+            //robo.delay(1500);
+
+            //robo.keyPress(KeyEvent.VK_ENTER);
+            //robo.keyRelease(KeyEvent.VK_ENTER);
+
+            //robo.delay(500);
+
+            //robo.keyPress(KeyEvent.VK_RIGHT);
+            //robo.keyRelease(KeyEvent.VK_RIGHT);
+
+            //robo.delay(500);
+  //      }
+    }
+}
